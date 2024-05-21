@@ -1,0 +1,22 @@
+{
+  "name": "ulldlocalscripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "safestub",
+  "license": "ISC",
+  "dependencies": {
+    "@citation-js/plugin-bibtex": "^0.7.12",
+    "@citation-js/plugin-csl": "^0.7.11",
+    "@types/node": "^20.12.12",
+    "bibtex": "^0.9.0",
+    "citation-js": "^0.7.12",
+    "glob": "^10.3.16",
+    "gray-matter": "^4.0.3",
+    "tsx": "^4.10.5",
+    "typescript": "^5.4.5"
+  }
+}
