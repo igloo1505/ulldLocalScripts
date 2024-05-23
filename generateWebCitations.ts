@@ -1,7 +1,6 @@
 import Cite from "citation-js";
-import path from "path";
 import fs from "fs";
-import { BibEntry, BibFilePresenter, parseBibFile } from "bibtex";
+import { BibEntry, parseBibFile } from "bibtex";
 import { globSync } from "glob";
 import matter from "gray-matter";
 import { replaceRecursively } from "./utils";
@@ -21,11 +20,7 @@ const getFormattedCslCitation = (content: string) => {
 };
 
 const formatCitation = (s: string, index: number) => {
-    return `<span style={{
-width: "0.5rem",
-height: "100%",
-position: "relative"
-}}><a href='#bib-${s}' className="citation citationAnchor" id="cit-${s}-idx-${index}">${index + 1}</a></span>`;
+    return `<span className="citationAnchor-container no-tooltip"><a href='#bib-${s}' className="citation citationAnchor" id="cit-${s}-idx-${index}">${index + 1}</a></span>`;
 };
 
 const gatherFileCitations = (content: string) => {
